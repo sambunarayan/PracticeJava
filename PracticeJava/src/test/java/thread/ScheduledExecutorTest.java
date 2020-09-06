@@ -1,4 +1,4 @@
-package test.java.executor;
+package test.java.thread;
 
 import java.time.LocalDateTime;
 import java.util.Date;

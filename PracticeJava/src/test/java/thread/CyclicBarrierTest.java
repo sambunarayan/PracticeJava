@@ -1,4 +1,4 @@
-package test.java.executor;
+package test.java.thread;
 
 import java.util.concurrent.BrokenBarrierException;
 import java.util.concurrent.CyclicBarrier;
@@ -34,7 +34,8 @@ public class CyclicBarrierTest {
 		try {
 			service = Executors.newFixedThreadPool(3);
 			CyclicBarrier c1 = new CyclicBarrier(3);
-			CyclicBarrier c2 = new CyclicBarrier(4, () -> System.out.println("task "));
+			CyclicBarrier c2 = new CyclicBarrier(4,
+					() -> System.out.println("task "));
 
 			for (int i = 0; i < 3; i++) {
 				service.execute(() -> new CyclicBarrierTest().exec(c1, c2));

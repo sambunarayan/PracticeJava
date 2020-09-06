@@ -1,4 +1,4 @@
-package test.java.executor;
+package test.java.thread;
 
 import java.time.LocalDate;
 import java.util.concurrent.ExecutorService;

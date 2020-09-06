@@ -1,4 +1,4 @@
-package test.java.executor;
+package test.java.thread;
 
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;

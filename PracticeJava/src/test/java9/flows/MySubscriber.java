@@ -10,7 +10,7 @@ public class MySubscriber<T> implements Subscriber<T> {
 	@Override
 	public void onSubscribe(Subscription subscription) {
 		this.subscription = subscription;
-		subscription.request(3);
+		subscription.request(1);
 	}
 
 	@Override

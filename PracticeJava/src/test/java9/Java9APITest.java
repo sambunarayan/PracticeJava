@@ -2,7 +2,6 @@ package test.java9;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
-import java.io.IOException;
 import java.time.LocalDateTime;
 import java.util.Arrays;
 import java.util.List;
@@ -11,6 +10,7 @@ import java.util.Optional;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.SubmissionPublisher;
 import java.util.concurrent.TimeUnit;
+import java.util.stream.Stream;
 
 import test.java9.flows.MySubscriber;
 import test.java9.flows.SecondSubscriber;
@@ -77,6 +77,11 @@ public class Java9APITest {
 	    publisher.close();  
 	    
 	    TimeUnit.SECONDS.sleep(10);
+	    
+	    // Stream
+	    Stream.of(1, 2, 3, 4, 5, 6, 7, 8, 9, 10).takeWhile(i -> i < 5)
+	    	.forEach(System.out::print);
+	    System.out.println();
 	}
 
 }

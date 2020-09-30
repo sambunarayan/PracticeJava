@@ -1,5 +1,7 @@
 package test.search;
 
+import java.util.Stack;
+
 public class OpenHashTest {
 
 	public static void main(String[] args) {
@@ -27,6 +29,8 @@ public class OpenHashTest {
 		System.out.println("retry add  ------------- ");
 		openHash.add("E", 4);
 		openHash.show();
+		
+		Stack<String> stack;
 	}
 
 }

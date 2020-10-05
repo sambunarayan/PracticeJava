@@ -5,12 +5,15 @@ import java.util.Random;
 public class SortTest {
 
 	public static void main(String[] args) {
-		int[] arr = new int[50000];
+		int[] arr = new int[140000];
 		Random r = new Random();
 		for (int i = 0; i < arr.length; i++) {
-			arr[i] = r.nextInt(50000);
+			arr[i] = r.nextInt(140000);
 		}
 		int[] cpyArr = new int[arr.length];
+		
+		ProcessHandle currentProcess = ProcessHandle.current();
+		System.out.println("Current Process Id:" + currentProcess.pid());
 		
 		System.arraycopy(arr, 0, cpyArr, 0, arr.length);
 		long start = System.currentTimeMillis();

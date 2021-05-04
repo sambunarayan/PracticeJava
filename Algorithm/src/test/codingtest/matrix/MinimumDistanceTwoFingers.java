@@ -1,4 +1,4 @@
-package test.codingtest.maze;
+package test.codingtest.matrix;
 
 import java.util.Scanner;
 

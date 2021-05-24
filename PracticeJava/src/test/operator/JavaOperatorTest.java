@@ -10,6 +10,17 @@ public class JavaOperatorTest {
 		System.out.println("16 >> 3 = " + (16 >> 3));
 		System.out.println("-16 >> 3 = " + (-16 >> 3));
 		System.out.println("-16 >>> 3 = " + (-16 >>> 3));
+
+		// Bit Operator
+		int n1 = 0b00001010;
+		int n2 = 0b00001101;
+
+		System.out.println("AND Operator -> " + (n1 & n2) + toBinaryStr((n1 & n2)));
+		System.out.println("OR Operator -> " + (n1 | n2) + toBinaryStr((n1 | n2)));
+		System.out.println("XOR Operator -> " + (n1 ^ n2) + toBinaryStr((n1 ^ n2)));
 	}
 
+	private static String toBinaryStr(int b) {
+		return " -> " + String.format("%8s", Integer.toBinaryString(b).replace(' ', '0'));
+	}
 }

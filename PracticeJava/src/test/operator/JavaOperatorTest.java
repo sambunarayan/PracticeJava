@@ -18,6 +18,11 @@ public class JavaOperatorTest {
 		System.out.println("AND Operator -> " + (n1 & n2) + toBinaryStr((n1 & n2)));
 		System.out.println("OR Operator -> " + (n1 | n2) + toBinaryStr((n1 | n2)));
 		System.out.println("XOR Operator -> " + (n1 ^ n2) + toBinaryStr((n1 ^ n2)));
+
+		// ReverseBit
+		int n3 = 0b11111111111111111111111111110101;
+		System.out.println("Reverse Bit Operator -> " + (~n1) + toBinaryStr((~n1)));
+		System.out.println("Reverse Bit Operator -> " + (~n3) + toBinaryStr((~n3)));
 	}
 
 	private static String toBinaryStr(int b) {
